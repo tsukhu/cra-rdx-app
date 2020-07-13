@@ -2,7 +2,7 @@ import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 import counterReducer from "./features/counter/CounterSlice";
 import orderReducer from "./features/order/OrderSlice";
-import postsReducer from "./features/posts/postsSlice";
+import postsReducer from "./features/posts/PostsSlice";
 import rootSaga from "./sagas";
 
 let sagaMiddleware = createSagaMiddleware();

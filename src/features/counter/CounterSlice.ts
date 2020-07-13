@@ -24,7 +24,7 @@ export const counterSlice = createSlice({
 
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
-export const incrementAsync = createAction<number>("INCR_ASYNC");
+export const incrementAsync = createAction<number>("COUNTER_INCREMENT_ASYNC");
 
 // The function below is called a selector and allows us to select a value from
 // the state. Selectors can also be defined inline where they're used instead of

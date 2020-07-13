@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAction } from "@reduxjs/toolkit";
 
 const initialState = {
   data: [],
@@ -29,4 +29,8 @@ const postsSlice = createSlice({
 export default postsSlice.reducer;
 export const { fetch, fetchSuccess, fetchFailure } = postsSlice.actions;
 export const selectPosts = (state: { posts: { data: any; }; }) => state.posts.data;
+export const selectLoading = (state: { posts: { loading: any; }; }) => state.posts.loading;
+export const selectError = (state: { posts: { error: any; }; }) => state.posts.error;
+
+export const fetchPostsAsync = createAction("POSTS_FETCH_ASYNC");
 

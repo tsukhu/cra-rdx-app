@@ -51,9 +51,7 @@ const Counter = () => {
         </button>
         <button
           className={styles.asyncButton}
-          onClick={() =>
-            dispatch(incrementAsync(Number(incrementAmount) || 0))
-          }
+          onClick={() => dispatch(incrementAsync(Number(incrementAmount) || 0))}
         >
           Add Async
         </button>
