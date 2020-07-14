@@ -43,13 +43,16 @@ function a11yProps(index: any) {
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 3,
     backgroundColor: theme.palette.background.paper,
     display: "flex",
-    height: "100vh",
+    minHeight: "100vh",
+    width: '100%'
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
+    display: "flex",
+    justifyContent: "center",
   },
 }));
 
