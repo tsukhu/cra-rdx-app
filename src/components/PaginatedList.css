@@ -1,0 +1,29 @@
+.paginated-list body {
+  font-size: 16px;
+  padding: 1rem;
+}
+
+.paginated-list ul {
+  margin: 0 auto;
+  max-width: 600px;
+  list-style: none;
+}
+
+.paginated-list li {
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 100px;
+}
+
+.paginated-list button {
+  border-radius: 0px;
+  background: #bbded6;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.paginated-list span {
+  display: block;
+  padding: 1rem 0px;
+}

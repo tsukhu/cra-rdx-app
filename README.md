@@ -1,2 +1,2 @@
-This project captures learnings and experiments with redux toolkit
+This project captures learnings and experiments with redux toolkit and xstate
 

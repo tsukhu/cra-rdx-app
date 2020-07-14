@@ -7,6 +7,7 @@ import Box from "@material-ui/core/Box";
 import Counter from "../features/counter/Counter";
 import Order from "../features/order/Order";
 import Posts from "../features/posts/Posts";
+import PaginatedList from "./PaginatedList";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -77,7 +78,7 @@ export default function AppTabs() {
         <Tab label="Counter" {...a11yProps(0)} />
         <Tab label="Wizard Form" {...a11yProps(1)} />
         <Tab label="Posts" {...a11yProps(2)} />
-        <Tab label="Item Four" {...a11yProps(3)} />
+        <Tab label="Paginated List" {...a11yProps(3)} />
         <Tab label="Item Five" {...a11yProps(4)} />
         <Tab label="Item Six" {...a11yProps(5)} />
         <Tab label="Item Seven" {...a11yProps(6)} />
@@ -92,7 +93,7 @@ export default function AppTabs() {
         <Posts />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        <PaginatedList/>
       </TabPanel>
       <TabPanel value={value} index={4}>
         Item Five
