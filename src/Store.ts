@@ -3,6 +3,9 @@ import createSagaMiddleware from "redux-saga";
 import counterReducer from "./features/counter/CounterSlice";
 import orderReducer from "./features/order/OrderSlice";
 import postsReducer from "./features/posts/PostsSlice";
+import todosSliceReducer from './features/todo/TodosSlice';
+import todoCounterSliceReducer from './features/todo/TodoCounterSlice';
+import selectedTodoSliceReducer from './features/todo/SelectedTodoSlice';
 import rootSaga from "./sagas";
 
 let sagaMiddleware = createSagaMiddleware();
@@ -14,6 +17,9 @@ const store = configureStore({
     counter: counterReducer,
     order: orderReducer,
     posts: postsReducer,
+    todos: todosSliceReducer,
+    todosCounter: todoCounterSliceReducer,
+    selectedTodo: selectedTodoSliceReducer,
   },
   middleware,
 });

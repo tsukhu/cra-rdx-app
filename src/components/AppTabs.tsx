@@ -9,6 +9,7 @@ import Order from "../features/order/Order";
 import Posts from "../features/posts/Posts";
 import PostsXState from "../features/posts/PostsXState";
 import PaginatedList from "./PaginatedList";
+import TodoApp from "../features/todo/TodoApp";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -81,7 +82,7 @@ export default function AppTabs() {
         <Tab label="Posts" {...a11yProps(2)} />
         <Tab label="Paginated List" {...a11yProps(3)} />
         <Tab label="Posts XState" {...a11yProps(4)} />
-        <Tab label="Item Six" {...a11yProps(5)} />
+        <Tab label="ToDo App" {...a11yProps(5)} />
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
@@ -100,7 +101,7 @@ export default function AppTabs() {
         <PostsXState />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+        <TodoApp />
       </TabPanel>
       <TabPanel value={value} index={6}>
         Item Seven
