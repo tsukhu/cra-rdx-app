@@ -1,13 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+export const orderInitialState =  {
+  base: "small",
+  crust: "classic_thin",
+  sauce: "no_sauce",
+  cheese: "no_cheese",
+}
 const orderSlice = createSlice({
   name: "order",
-  initialState: {
-    base: "small",
-    crust: "classic_thin",
-    sauce: "no_sauce",
-    cheese: "no_cheese",
-  },
+  initialState: orderInitialState,
   reducers: {
     chooseBase: (state, action) => {
       state.base = action.payload;

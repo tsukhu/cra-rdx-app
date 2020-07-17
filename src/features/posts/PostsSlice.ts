@@ -1,6 +1,6 @@
 import { createSlice, createAction } from "@reduxjs/toolkit";
 
-const initialState = {
+export const initialState = {
   data: [],
   loading: false,
   error: false,

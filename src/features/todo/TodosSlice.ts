@@ -12,7 +12,7 @@ export interface State {
   counter: number;
 }
 
-const initialState: Todo[] = [
+export const initialState: Todo[] = [
   {
     id: uuid(),
     desc: "Learn React",

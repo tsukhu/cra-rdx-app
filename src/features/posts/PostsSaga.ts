@@ -8,7 +8,7 @@ import {
 } from "./PostsSlice";
 
 
-const callAPI = async ({ url, method, data }: AxiosRequestConfig) => {
+export async function callAPI({ url, method, data }: AxiosRequestConfig) {
   return await Axios({
     url,
     method,
